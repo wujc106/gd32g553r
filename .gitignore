@@ -1,0 +1,24 @@
+# dot files
+/.vscode
+/openocd_gdlink
+/.gcc_startup
+/lvgl/docs
+/lvgl/.github
+/lvgl/.devcontainer
+/lvgl/config
+/lvgl/demos
+/lvgl/env_support
+/lvgl/tests
+/lvgl/examples
+/lvgl/scripts
+/lvgl/*.h
+/lvgl/*.md
+# project out
+/build
+/bin
+/obj
+/out
+
+# eide template
+*.ept
+*.eide-template

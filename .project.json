@@ -1,0 +1,261 @@
+{
+  "projectname": "oled_test",
+  "mcu": "GD32G553RET7",
+  "debug": {
+    "activeConfiguration": "Debug",
+    "configurations": [
+      {
+        "name": "Debug",
+        "probe": "gdlink",
+        "sn": "",
+        "cfg": [
+          "e:\\GD32\\user_code\\oled_test\\openocd_gdlink\\openocd_gdlink.cfg"
+        ],
+        "interface": "swd",
+        "speed": 4000,
+        "svdFile": "GD32G5x3.svd",
+        "elfFile": "",
+        "resetOnConnect": true,
+        "loadSymbolsOnly": false,
+        "freezePeripherals": false
+      }
+    ]
+  },
+  "ProjectActiveConfigurations": "Debug",
+  "configurations": {
+    "Debug": {
+      "targetProcessor": {
+        "armFamily": "cortex-m33",
+        "architecture": "None",
+        "instructionSet": "Thumb",
+        "floatABI": "None",
+        "fpuType": "None",
+        "otherTargetFlags": ""
+      },
+      "optimization": {
+        "level": "-O0",
+        "messageLength": true,
+        "signedChar": true,
+        "functionSections": true,
+        "dataSections": true,
+        "noCommon": false,
+        "pic": false,
+        "lto": false,
+        "otherFlags": ""
+      },
+      "warnings": {
+        "syntaxOnly": false,
+        "inhibitAll": false,
+        "werror": false,
+        "pedantic": false,
+        "pedanticErrors": false,
+        "wall": false,
+        "wextra": false,
+        "wunused": false,
+        "wuninitialized": false,
+        "wconversion": false,
+        "otherFlags": ""
+      },
+      "debugging": {
+        "level": "-g3",
+        "prof": false,
+        "gprof": false,
+        "otherFlags": ""
+      },
+      "outputFile": {
+        "list": true,
+        "dump": false,
+        "hex": true,
+        "bin": true,
+        "mot": false,
+        "size": true,
+        "objcopyFlags": "",
+        "objdumpFlags": "--source --all-headers --demangle --line-numbers --wide",
+        "sizeFlags": "--format=berkeley"
+      },
+      "compiler": {
+        "general": {
+          "cStandard": "-std=gnu11",
+          "otherFlags": ""
+        },
+        "preprocessor": {
+          "defines": [
+            "GD32G553",
+            "GD_ECLIPSE_GCC",
+            "USE_STDPERIPH_DRIVER"
+          ]
+        },
+        "includes": {
+          "includePaths": [
+            "Firmware/CMSIS",
+            "Firmware/CMSIS/GD/GD32G5x3/Include",
+            "Firmware/GD32G5x3_standard_peripheral/Include",
+            "inc"
+          ],
+          "systemPaths": [],
+          "includeFiles": []
+        }
+      },
+      "linker": {
+        "general": {
+          "linkerScript": "gd32g5x3_flash.ld",
+          "nostartfiles": false,
+          "nodefaultlibs": false,
+          "nostdlib": false,
+          "gcSections": true,
+          "stripAll": false
+        },
+        "libraries": {
+          "libs": [],
+          "searchPaths": [
+            "ldscripts/"
+          ]
+        },
+        "miscellaneous": {
+          "linkerFlags": [],
+          "otherObjects": [],
+          "generateMap": true,
+          "crossReference": false,
+          "newlibNano": true,
+          "printfFloat": false,
+          "noSyscalls": true,
+          "otherFlags": "-Wl,--no-warn-rwx-segments"
+        }
+      },
+      "assembler": {
+        "preprocessor": {
+          "usePreprocessor": true,
+          "nostdinc": false
+        },
+        "miscellaneous": {
+          "assemblerFlags": "",
+          "generateListing": false,
+          "verbose": false,
+          "otherFlags": ""
+        },
+        "includes": {
+          "includePaths": [],
+          "systemPaths": [],
+          "includeFiles": []
+        }
+      }
+    },
+    "Release": {
+      "targetProcessor": {
+        "armFamily": "cortex-m33",
+        "architecture": "None",
+        "instructionSet": "Thumb",
+        "floatABI": "None",
+        "fpuType": "None",
+        "otherTargetFlags": ""
+      },
+      "optimization": {
+        "level": "-O0",
+        "messageLength": true,
+        "signedChar": true,
+        "functionSections": true,
+        "dataSections": true,
+        "noCommon": false,
+        "pic": false,
+        "lto": false,
+        "otherFlags": ""
+      },
+      "warnings": {
+        "syntaxOnly": false,
+        "inhibitAll": false,
+        "werror": false,
+        "pedantic": false,
+        "pedanticErrors": false,
+        "wall": false,
+        "wextra": false,
+        "wunused": false,
+        "wuninitialized": false,
+        "wconversion": false,
+        "otherFlags": ""
+      },
+      "debugging": {
+        "level": "-g",
+        "prof": false,
+        "gprof": false,
+        "otherFlags": ""
+      },
+      "outputFile": {
+        "list": true,
+        "dump": false,
+        "hex": true,
+        "bin": true,
+        "mot": false,
+        "size": true,
+        "objcopyFlags": "",
+        "objdumpFlags": "--source --all-headers --demangle --line-numbers --wide",
+        "sizeFlags": "--format=berkeley"
+      },
+      "compiler": {
+        "general": {
+          "cStandard": "-std=gnu11",
+          "otherFlags": ""
+        },
+        "preprocessor": {
+          "defines": [
+            "GD32G553",
+            "USE_STDPERIPH_DRIVER",
+            "NDEBUG"
+          ]
+        },
+        "includes": {
+          "includePaths": [
+            "Firmware/CMSIS",
+            "Firmware/CMSIS/GD/GD32G5x3/Include",
+            "Firmware/GD32G5x3_standard_peripheral/Include",
+            "inc"
+          ],
+          "systemPaths": [],
+          "includeFiles": []
+        }
+      },
+      "linker": {
+        "general": {
+          "linkerScript": "gd32g5x3_flash.ld",
+          "nostartfiles": false,
+          "nodefaultlibs": false,
+          "nostdlib": false,
+          "gcSections": true,
+          "stripAll": false
+        },
+        "libraries": {
+          "libs": [],
+          "searchPaths": [
+            "ldscripts/"
+          ]
+        },
+        "miscellaneous": {
+          "linkerFlags": [],
+          "otherObjects": [],
+          "generateMap": true,
+          "crossReference": false,
+          "newlibNano": true,
+          "printfFloat": false,
+          "noSyscalls": true,
+          "otherFlags": "-Wl,--no-warn-rwx-segments"
+        }
+      },
+      "assembler": {
+        "preprocessor": {
+          "usePreprocessor": true,
+          "nostdinc": false
+        },
+        "miscellaneous": {
+          "assemblerFlags": "",
+          "generateListing": false,
+          "verbose": false,
+          "otherFlags": ""
+        },
+        "includes": {
+          "includePaths": [],
+          "systemPaths": [],
+          "includeFiles": []
+        }
+      }
+    }
+  }
+}

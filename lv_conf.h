@@ -1,0 +1,72 @@
+﻿#ifndef LV_CONF_H
+#define LV_CONF_H
+
+#define LV_COLOR_DEPTH 16
+#define LV_COLOR_16_SWAP 0
+#define LV_USE_STDLIB_MALLOC LV_STDLIB_BUILTIN
+#define LV_USE_STDLIB_STRING LV_STDLIB_BUILTIN
+#define LV_USE_STDLIB_SPRINTF LV_STDLIB_BUILTIN
+#define LV_MEM_SIZE (64 * 1024U)
+#define LV_USE_DRAW_SW 1
+#define LV_USE_DRAW_SW_RECT 1
+#define LV_USE_DRAW_SW_ARC 1
+#define LV_USE_DRAW_SW_LINE 1
+#define LV_USE_DRAW_SW_LABEL 1
+#define LV_USE_DRAW_SW_IMG 1
+#define LV_USE_DRAW_SW_MASK 1
+#define LV_USE_GPU 0
+#define LV_USE_LOG 0
+#define LV_USE_FS 0
+#define LV_USE_FILESYSTEM 0
+#define LV_USE_IMAGE 1
+#define LV_USE_LABEL 1
+#define LV_USE_OBJ_NAME 0
+#define LV_USE_TINY_ARENA 1
+#define LV_USE_THEME_DEFAULT 1
+#define LV_USE_THEME_EMPTY 1
+#define LV_USE_ANIMATION 1
+#define LV_USE_SHADOW 1
+#define LV_USE_LINE 1
+#define LV_USE_BTN 1
+#define LV_USE_LABEL 1
+#define LV_USE_IMG 1
+#define LV_USE_ARC 1
+#define LV_USE_BAR 1
+#define LV_USE_LINEMETER 1
+#define LV_USE_DROPDOWN 1
+#define LV_USE_OBJMASK 1
+#define LV_USE_SLIDER 1
+#define LV_USE_SWITCH 1
+#define LV_USE_TEXTAREA 1
+#define LV_USE_TABLE 1
+#define LV_USE_METER 1
+#define LV_USE_CHART 1
+#define LV_USE_CALENDAR 1
+#define LV_USE_CHECKBOX 1
+#define LV_USE_LED 1
+#define LV_USE_ROLLER 1
+#define LV_USE_LIST 1
+#define LV_USE_MSGBOX 1
+#define LV_USE_PAGE 1
+#define LV_USE_SPINNER 1
+#define LV_USE_TABVIEW 1
+#define LV_USE_TILEVIEW 1
+#define LV_USE_WIN 1
+#define LV_USE_USER_DATA 0
+#define LV_FONT_MONTSERRAT_12 1
+#define LV_FONT_MONTSERRAT_14 1
+#define LV_FONT_MONTSERRAT_16 1
+#define LV_FONT_MONTSERRAT_20 1
+#define LV_FONT_DEFAULT &lv_font_montserrat_16
+#define LV_USE_FONT_SUBPX 0
+#define LV_USE_BIDI 0
+#define LV_USE_GC 0
+#define LV_USE_ASSERT_MEM_INTEGRITY 0
+#define LV_USE_ASSERT_OBJ 0
+#define LV_USE_ASSERT_STYLE 0
+#define LV_USE_SYSMON 0
+#define LV_USE_PERF_MONITOR 0
+#define LV_USE_SNAPSHOT 0
+#define LV_USE_VECTOR_GRAPHIC 0
+
+#endif /* LV_CONF_H */
