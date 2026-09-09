@@ -1,7 +1,7 @@
 # dot files
 /.vscode
 /openocd_gdlink
-/.gcc_startup
+/gcc_startup
 /lvgl/docs
 /lvgl/.github
 /lvgl/.devcontainer

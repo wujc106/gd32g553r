@@ -1,6 +1,6 @@
 {
   "projectname": "oled_test",
-  "mcu": "GD32G553RET7",
+  "mcu": "GD32G553RE",
   "debug": {
     "activeConfiguration": "Debug",
     "configurations": [
@@ -14,7 +14,7 @@
         "interface": "swd",
         "speed": 4000,
         "svdFile": "GD32G5x3.svd",
-        "elfFile": "",
+        "elfFile": "build/Debug/oled_test.elf",
         "resetOnConnect": true,
         "loadSymbolsOnly": false,
         "freezePeripherals": false
